@@ -1,0 +1,43 @@
+# CODEOWNERS file
+#
+# This file defines code ownership for the repository.
+# Code owners are automatically requested for review when someone opens a pull request
+# that modifies code they own.
+#
+# Documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Syntax:
+# pattern email/username
+#
+# Examples:
+# *.py @python-team
+# /docs/ @documentation-team
+# *.md @documentation-team
+# * @org/team-name
+#
+
+# Default owners for everything in the repo
+# These owners will be requested for review unless a later match takes precedence
+* @takabayashi-demos
+
+# API code ownership
+/app.py @takabayashi-demos
+/test_app.py @takabayashi-demos
+
+# Docker and deployment configuration
+/Dockerfile @takabayashi-demos
+/docker-compose.yml @takabayashi-demos
+/.github/workflows/ @takabayashi-demos
+
+# Documentation
+/README.md @takabayashi-demos
+*.md @takabayashi-demos
+
+# Configuration files
+/requirements.txt @takabayashi-demos
+/.env.example @takabayashi-demos
+/pytest.ini @takabayashi-demos
+/Makefile @takabayashi-demos
+
+# GitHub configuration
+/.github/ @takabayashi-demos
